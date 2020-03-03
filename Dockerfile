@@ -1,13 +1,5 @@
-FROM node:10.13.0-alpine
-
+FROM node:10.15.2-alpine
 WORKDIR /usr/src/app
-
-COPY package*.json ./
-RUN npm install
-
+COPY package.json ./
+RUN yarn
 COPY . .
-
-# TypeScript
-RUN npm run build
-
-CMD [ "npm", "run", "start" ]

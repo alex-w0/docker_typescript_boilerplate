@@ -1,9 +1,10 @@
 {
   "description": "Node.js boilerplate project",
   "repository": {
-  "type": "git",
-  "url": "git://github.com/username/repository.git"
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
   },
+  "main": "/dist/app.js",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon",
@@ -20,6 +21,7 @@
     "ts-node": "^8.6.2"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "typescript": "^3.8.2"
   }

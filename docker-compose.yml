@@ -10,6 +10,6 @@ services:
       - .:/usr/src/app
       - /usr/src/app/node_modules
     ports:
-      - 3000:3000
-      - 9229:9229
+      - "${PORT}:${PORT}"
+      - "9222:9222" # debug port node for inspect-brk
     command: yarn dev
